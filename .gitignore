@@ -1,0 +1,34 @@
+# Visual Studio tarafından oluşturulan geçici dosyaları yoksay
+.vs/
+
+# Proje derlemelerini yoksay
+/bin/
+/obj/
+
+# Visual Studio'nun proje özel ayar dosyalarını yoksay
+*.suo
+*.user
+*.sln.docstates
+
+# Derleme sonuçlarını yoksay
+[Tt]humbs.db
+*.dbmdl
+*.pch
+*.pdb
+*.gpstate
+
+# Sonuç dosyalarını yoksay
+*.dll
+*.exe
+
+# Visual Studio'nun eski proje klasörlerini yoksay
+_ReSharper*/
+*.resharper
+*.resharper.user
+
+# Rider, ReSharper ve dotCover'ın özel dosyalarını yoksay
+.idea/
+*.sln.iml
+
+# NuGet paket klasörünü yoksay
+packages/

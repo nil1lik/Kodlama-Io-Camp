@@ -1,5 +1,6 @@
 ﻿// see https://aka.ms/new-console-template for more information
 using Intro.Business;
+using Intro.DataAccess.Concretes;
 using Intro.Entities;
 
 Console.WriteLine("hello, world!");
@@ -55,9 +56,9 @@ for (int i = 0; i < courses.Length; i++)
     Console.WriteLine(courses[i].Name + " / " + courses[i].Price);
 }
 
-CourseManager courseManager = new();
-Course[] courses2 = courseManager.GetAll();
-for (int i = 0; i < courses2.Length; i++)
+CourseManager courseManager = new(new EfCourseDal());
+List<Course> courses2 = courseManager.GetAll();
+    for (int i = 0; i < courses2.Count; i++)
 {
     Console.WriteLine(courses2[i].Name + " / " + courses2[i].Price);
 }
@@ -113,10 +114,6 @@ BaseCustomer[] customers = { customer1, customer2, customer3, customer4 };
 //polymorphism
 foreach (BaseCustomer customer in customers)
 {
-    if (customer is IndividualCustomer)
-    {
-        (IndividualCustomer)customer.
-    }
     Console.WriteLine(customer.CustomerNumber);
 }
 

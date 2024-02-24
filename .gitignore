@@ -4,6 +4,7 @@
 # Proje derlemelerini yoksay
 /bin/
 /obj/
+obj/
 
 # Visual Studio'nun proje özel ayar dosyalarını yoksay
 *.suo
